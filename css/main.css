@@ -1,0 +1,286 @@
+body, div, section, button, a, ul, li, p, span, h1, h2, h3, h4, h5, h6 {
+
+}
+body, div, section {
+	background-size: 100% 100%;
+}
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+
+}
+header {
+	left: 0;
+}
+nav > ul > li{
+	text-align: center;
+	cursor: pointer;
+	display: inline-table;
+	padding: 10px;
+}
+nav > ul > li:hover {
+	transform: scale(1.05);
+	transition: 0.4s ease;
+}
+nav > ul > li:hover > a {
+	color: #ffffff;
+}
+footer {
+	background-color: black;
+}
+.display-inline {
+	display: inline;
+}
+.font-weight-400 {
+	font-weight:  400;
+}
+.font-weight-600 {
+	font-weight: 600;
+}
+.underline {
+	text-decoration: underline solid #fb9b03;
+}
+.background-color-white {
+	background-color: rgba(255,255,255,0.5);
+}
+.background-color-black {
+	background-color: rgba(0,0,0,0.5);
+}
+.background-color-orange {
+	background-color: #fb9b03;
+}
+.background-color-blue {
+	background-color: #1cb9f3;
+}
+.button {
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 100rem;
+	padding: 0.5rem 2rem;
+}
+.button:hover {
+	transition: 0.4s ease;
+	transform: scale(1.07);
+	color: white;
+}
+.height-100vh {
+	height: 100vh;
+}
+.width {
+	width: 100vw;
+}
+.parent-width {
+	width: 100%;
+}
+.parent-height {
+	height: 100%;
+}
+.parent-semi-height {
+	height: 50%;
+}
+.parent-semi-width {
+	width: 50%;
+}
+.parent-quarter-height {
+	height: 20%;
+}
+.parent-quarter-width {
+	width: 20%;
+}
+.text-center {
+	text-align: center;
+}
+.color-orange {
+	color: #fb9b03;
+}
+.color-blue {
+	color: #1cb9f3;
+}
+.color-white {
+	color: #ffffff;
+}
+.color-black {
+color: #000000;
+}
+.page {
+	margin-top: 0;
+	height: 100vh;
+	width: 100vw;
+}
+.sideBarMenu {
+	background-color: orange;
+	height: 100vh;
+	overflow: auto;
+}
+.middleContent {
+	height: 100vh;
+	overflow: auto;
+}
+.subMainContain {
+	height: 95vh; 
+	width: 80vw;
+}
+.infoBox {
+	height: 80vh;
+	margin: auto auto 20px auto;
+	padding: 20px;
+	background-color: #e3f6f5;
+	box-shadow: 6px 6px 10px rgba(0,0,0,0.5);
+}
+.background-image-blur {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	filter: blur(10px);
+}
+.contain {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	overflow: auto;
+}
+.hasForm {
+	padding: 10px;
+	height: 100%;
+	/*box-shadow: 8px 8px 20px rgba(0,0,0,0.5);*/
+	overflow: auto;
+	overflow-x: hidden;
+}
+/*.hasForm:hover {
+	box-shadow: 10px 10px 40px rgba(0,0,0,0.5);
+}*/
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.parentHasHiddenElement:hover > .visibleOnParentHover {
+	display: block;
+}
+.visibleOnParentHover {
+	position: absolute;
+	top: 80vh;
+	padding: 10px;
+	z-index: 100;
+	overflow: auto;
+	background-color: white;
+	color: white;
+	border-radius: 6px;
+	box-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+	font-weight: 600;
+	display: none;
+}
+ul li {
+	list-style: none;
+	margin: 10px;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+	border: none;
+
+	margin: 4px;
+
+	transition: 0.4s ease
+}
+button > a {
+	color: #000000;
+	text-decoration: none;
+}
+button:hover {
+	transition: 0.4s ease;
+}
+button:focus {
+	outline: none;
+}
+
+/* STYLE POUR FORMULAIRE */
+fieldset {
+	border: none;                                         
+}
+input, select {
+	margin: 10px;
+	border-radius: 100rem;
+	border: 2px solid orange;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+
+	padding: 10px;
+	background-color: transparent;
+	transition: 0.2s ease-in-out;
+}
+/*input:valid {
+	transition: 0.2s ease;
+	background-color: lightgreen;
+}*/
+input:focus {
+	border: 3px solid orange;
+	outline: none;
+	border-radius: 45px;
+	color: #000000;
+	font-weight: 600;
+
+	transition: 0.2s ease-in-out;
+	transform: scale(1.15);
+}
+input:not(:focus):invalid {
+	transition: 0.5s ease;
+	background-color: #b20a37;
+	border: solid #b20a37;
+	color: #ffffff;
+}
+
+/*input:invalid {
+	transition: 0.5s ease;
+	background-color: #b20a37;
+	border: solid #b20a37;
+	color: #ffffff;
+}*/
+
+/*Les animations */
+.pulse {
+	animation: 0.3s infinite alternate ease pulse ;
+}
+@keyframes pulse {
+	0% {
+		background-color: #1cb9f3;
+		transform: scale(1.025);
+	}
+	25% {
+		transform: scale(1.05);
+	}
+	50% {
+		transform: scale(1.075);
+	}
+	75% {
+		transform: scale(1.1);
+	}
+	100% {
+		background-color: #fb9b03;
+		transform: scale(1.105);
+	}
+}
+@media screen and (max-width: 800px) {
+	.hidden-when-xs {
+		display: none;
+	}
+}
+@media screen and (min-width: 800px) {
+	.hidden-when-md {
+		display: none;
+	}
+}

@@ -1,0 +1,51 @@
+body {
+	background-size: 100% 100%: ;
+	background-image: url('../assets/img/sketch.webp');
+}
+.form-container {
+	height: 100%;
+	overflow: auto;
+}
+input {
+	width: 80%;
+	background-color: #fff;
+}
+.hasForm {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+	height: 70vh;
+	overflow: hidden;
+	/*background-image: url('../assets/img/unnamed.jpg');*/
+}
+.col-md-7 {
+	background-image: url('../images/cat.webp');
+}
+div, body, section {
+	background-size: 100% 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+}
+h4 {
+	padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+	.hasForm {
+		height: 100vh;
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+	.form-container {
+
+	}
+	input, select {
+		/*border-radius: 0;
+		background-color: transparent;
+		box-shadow: none;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: solid 2px #000000;*/
+	}
+}

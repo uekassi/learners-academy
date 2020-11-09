@@ -1,0 +1,17 @@
+body {
+	background-color: #162447;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+div {
+	text-align: center;
+}
+.jumbotron {
+	/*background-image: url('../images/girl-crying.webp');*/
+	background-color: transparent;
+	color: white;
+}
